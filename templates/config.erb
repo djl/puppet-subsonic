@@ -1,2 +1,15 @@
-SUBSONIC_USER=<%= @user %>
-SUBSONIC_ARGS="--port=<%= @port %> --host=<%= @host %> <%= @extra_opts %>"
+SUBSONIC_HOME=<%= scope['::subsonic::home'] %>
+SUBSONIC_HOST=<%= scope['::subsonic::host'] %>
+SUBSONIC_PORT=<%= scope['::subsonic::port'] %>
+SUBSONIC_HTTPS_PORT=<%= scope['::subsonic::https_port'] %>
+SUBSONIC_CONTEXT_PATH=<%= scope['::subsonic::context_path'] %>
+SUBSONIC_INIT_MEMORY=<%= scope['::subsonic::init_memory'] %>
+SUBSONIC_MAX_MEMORY=<%= scope['::subsonic::max_memory'] %>
+SUBSONIC_PIDFILE=<%= scope['::subsonic::pidfile'] %>
+SUBSONIC_DEFAULT_MUSIC_FOLDER=<%= scope['::subsonic::default_music_folder'] %>
+SUBSONIC_DEFAULT_UPLOAD_FOLDER=<%= scope['::subsonic::default_upload_folder'] %>
+SUBSONIC_DEFAULT_PODCAST_FOLDER=<%= scope['::subsonic::default_podcast_folder'] %>
+SUBSONIC_DEFAULT_PLAYLIST_IMPORT_FOLDER=<%= scope['::subsonic::default_playlist_import_folder'] %>
+SUBSONIC_DEFAULT_PLAYLIST_EXPORT_FOLDER=<%= scope['::subsonic::default_playlist_export_folder'] %>
+SUBSONIC_DEFAULT_PLAYLIST_BACKUP_FOLDER=<%= scope['::subsonic::default_playlist_backup_folder'] %>
+SUBSONIC_DEFAULT_TIMEZONE=<%= scope['::subsonic::default_timezone'] %>
